@@ -1,0 +1,6 @@
+This project aims to predict mobile phone prices based on variousfeatures such as memory, RAM, battery capacity, AI Lens, and mobile height. After performing extensive data preprocessing,
+including handling outliers, label encoding categorical features (processor,rear camera,front camera), and scaling numeric features, multiple regression models were applied.
+The first model, Linear Regression, resulted in a Mean squared error (MSE) of 0.599, Mean Absolute error(MAE) of 0.444, and R2 score of 0.671. While this was a reasonalbe start, further optimization was necessary.
+Using GridSearchCV for hyperparameter tuning and applying the RandomForestRegressor, the model performance significantly improved with an MSE of 0.361 and MAE 0.14.
+When compairing other algorithm, XGBoost emerged as the best-performing model with an MSE of 0.311 MAE of 0.115, and an R2 score of 0.911, indicating high predictive power. In contrast, AdaBoost had slightly lower performance with an MSE of 0.426, MAE of 0.335 and R2 score of 0.833.
+The final insights reveal that memory,RAM, and Mobiel Height type were the most influential factors in determining mobile prices. These results suggest that focusing on optimizing these key features could provide better accuracy in predicting mobile phone prices.
